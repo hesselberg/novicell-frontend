@@ -8,20 +8,20 @@
   },
   "main":"index.js",
   "author": {
-    "name" : "Adam Peter Nielsen", 
+    "name" : "Adam Peter Nielsen",
     "email" : "apn@novicell.dk"
     },
   "contributors" : [
       {
-        "name" : "Emil Busch", 
+        "name" : "Emil Busch",
         "email" : "ebu@novicell.dk"
       },
       {
-        "name" : "Danni Larsen", 
+        "name" : "Danni Larsen",
         "email" : "dla@novicell.dk"
       },
       {
-        "name" : "Emil Rasmussen", 
+        "name" : "Emil Rasmussen",
         "email" : "era@novicell.dk"
       }
     ],
@@ -32,6 +32,7 @@
     "gulp-autoprefixer": "^1.0.1",
     "gulp-bower": "0.0.7",
     "gulp-concat": "^2.4.1",
+    "gulp-changed": "^1.2.1",
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^1.2.1",
     "gulp-jscs": "^1.2.0",

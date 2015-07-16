@@ -14,9 +14,11 @@ gulp.task('scripts', function () {
         var useSourcemaps = ignores.indexOf("sourcemaps") == -1;
         var useUglify = ignores.indexOf("uglify") == -1;
 
+        console.log('run');
+
         return gulp.src(b.scripts)
             .pipe(plugins.plumber(config.errorHandler("scripts")))
-            .pipe(plugins.resolveDependencies({ pattern: /\* @require [\s-]*(.*?\.js)/g }))
+            .pipe(plugins.changed(config.scriptsDist))
             .pipe(plugins.if(useJshint, plugins.jshint()))
             .pipe(plugins.if(useJscs, plugins.jscs()))
             .pipe(plugins.if(useSourcemaps, plugins.sourcemaps.init({ loadMaps: true })))
